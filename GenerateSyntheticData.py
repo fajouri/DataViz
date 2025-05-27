@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 # Parameters
-players = ["CR7", "Messi", "Mbappe", "Osihmen"]
+players = ["CR9", "Messi", "Mbappe", "Osihmen"]
 n_points = 500
 pitch_length, pitch_width = 105, 68
 
@@ -11,7 +11,7 @@ rows = []
 rng = np.random.default_rng(42)
 for p in players:
     # Example: different players favor different thirds
-    if p == "CR7":
+    if p == "CR9":
         xs = rng.normal(loc=pitch_length*0.25, scale=10, size=n_points)
         ys = rng.normal(loc=pitch_width*0.50,  scale=15, size=n_points)
     elif p == "Messi":
@@ -29,4 +29,9 @@ for p in players:
 df = pd.DataFrame(rows)
 df.to_csv("player_positions2.csv", index=False)
 print("Saved synthetic dataset to player_positions2.csv")
+<<<<<<< HEAD
 print("Asma first attempt")
+=======
+print("Test")
+>>>>>>> 8e61933a9b2e6c6a8cb50db3f146c008edffa72d
+print("Asma hi there")
