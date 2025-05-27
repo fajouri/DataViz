@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 # Parameters
-players = ["CR7", "Messi", "Mbappe", "Osihmen"]
+players = ["CR9", "Messi", "Mbappe", "Osihmen"]
 n_points = 500
 pitch_length, pitch_width = 105, 68
 
