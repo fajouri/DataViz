@@ -29,4 +29,9 @@ for p in players:
 df = pd.DataFrame(rows)
 df.to_csv("player_positions2.csv", index=False)
 print("Saved synthetic dataset to player_positions2.csv")
+<<<<<<< HEAD
+print("Asma first attempt")
+=======
 print("Test")
+>>>>>>> 8e61933a9b2e6c6a8cb50db3f146c008edffa72d
+print("Asma hi there")
