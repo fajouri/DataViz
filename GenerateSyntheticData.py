@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 # Parameters
-players = ["CR9", "Messi", "Mbappe", "Osihmen"]
+players = ["Haaland", "Messi", "Mbappe", "Osihmen"]
 n_points = 500
 pitch_length, pitch_width = 105, 68
 
@@ -11,7 +11,7 @@ rows = []
 rng = np.random.default_rng(42)
 for p in players:
     # Example: different players favor different thirds
-    if p == "CR9":
+    if p == "Haaland":
         xs = rng.normal(loc=pitch_length*0.25, scale=10, size=n_points)
         ys = rng.normal(loc=pitch_width*0.50,  scale=15, size=n_points)
     elif p == "Messi":
@@ -35,3 +35,4 @@ print("Asma first attempt")
 print("Test")
 >>>>>>> 8e61933a9b2e6c6a8cb50db3f146c008edffa72d
 print("Asma hi there")
+print("KiNG Cyber")
