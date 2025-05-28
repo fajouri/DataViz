@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 # Parameters
-players = ["Haaland", "Messi", "Mbappe", "Osihmen"]
+players = ["Haaland", "Messi", "Mbappe", "Kane", "Osihmen"]
 n_points = 500
 pitch_length, pitch_width = 105, 68
 
@@ -20,6 +20,9 @@ for p in players:
     elif p == "Mbappe":
         xs = rng.normal(loc=pitch_length*0.10, scale=20, size=n_points)
         ys = rng.normal(loc=pitch_width*0.20,  scale=10, size=n_points)
+    elif p == "Kane":
+        xs = rng.normal(loc=pitch_length*0.40, scale=60, size=n_points)
+        ys = rng.normal(loc=pitch_width*0.40,  scale=10, size=n_points)
     else:  # Osihmen 
         xs = rng.uniform(0, pitch_length, size=n_points)
         ys = rng.uniform(0, pitch_width,  size=n_points)
@@ -33,3 +36,4 @@ print("Asma first attempt")
 print("Test")
 print("Asma hi there")
 print("Cyber King")
+print("Just a new trial")
